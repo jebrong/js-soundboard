@@ -11,17 +11,10 @@ sounds.forEach((sound) => {
 
     song.play();
     song.currentTime = 0;
-    console.log(song.duration);
   });
 
   document.querySelector("#buttons").appendChild(btn);
 });
 
-function stopSongs() {
-  sounds.forEach((sound) => {
-    const song = document.getElementById(sound);
-
-    song.pause();
-    song.currentTime = 0;
-  });
-}
+const allSounds = document.querySelectorAll(".btn");
+const mute = document.querySelector(".pause");
